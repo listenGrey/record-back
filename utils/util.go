@@ -18,7 +18,7 @@ func D128ToS(d primitive.Decimal128) string {
 func SToTime(str string) time.Time {
 	t, _ := time.Parse(time.RFC3339, str)
 
-	return t.Add(8 * time.Hour)
+	return t
 }
 
 func TimeToS(t time.Time) string {
